@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="cbph-style.css"> -->
+    <link rel="stylesheet" href="styles/cbph-style.css">
+    <link rel="stylesheet" href="styles/style-lib.css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+
+    <!-- for emailer -->
+
+    <script src="contact-script.js" type="text/javascript"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("9hDqjJs6xRn2eYVSh");
+    })();
+    </script>
+
+
+ 
+
+
+</head>
+<body>
+
+    <div class="main-container contactUs__page">
+        
+        <!-- NAVBAR -->
+        <div class="navbar w100 ">
+            <div class="icon ">
+                <img src="images/progi-logo.svg" alt="" class="icon-img">
+            </div>
+            
+            <ul class="navbar-right  ">
+                <li>
+                    <a href="index.html" class="menu">Home</a>
+                </li>
+                <li>
+                    <a href="cbph-progsterol.html" class="menu">About</a>
+                </li>
+                <li>
+                    <a href="cbph-registration.html" class="menu">Registration</a>
+                </li>
+                <li>
+                    <a href="cbph-clinical-studies.html" class="menu">Clinical Studies</a>
+                </li>
+                <li>
+                    <a href="cbph-faqs.html" class="menu">FAQ'S</a>
+                </li>
+                <li>
+                    <a href="cbph-contact.html" class="menu-active">Contacts</a>
+                </li>
+            </ul>
+            
+           
+        </div>
+
+        <div class="sidenav ">
+            <div class="icon-one ">
+                <div class="hamburger hamburger-one"></div>
+            </div>
+            <div class="mobile-nav">
+                <ul class="mobile-navbar font-opensans ">
+                    <li>
+                        <a href="index.html" class="menu">HOME</a>
+                    </li>
+                    <li>
+                        <a href="cbph-progsterol.html" class="menu">About</a>
+                    </li>
+                    <li>
+                        <a href="cbph-registration.html" class="menu">Registration</a>
+                    </li>
+                    <li>
+                        <a href="cbph-clinical-studies.html" class="menu">Clinical Studies</a>
+                    </li>
+                    <li>
+                        <a href="cbph-faqs.html" class="menu">FAQ'S</a>
+                    </li>
+                    <li>
+                        <a href="cbph-contact.html" class="menu-active">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact__us d-flex align-items-center  justify-content-center">
+            <label for="" class="text-page-header text-white text-bold">Contact Us</label>
+        </div>
+        <!-- section one -->
+
+
+        <div class="alert alert-primary popup-hidden" role="alert" id="success-popup">
+            Message Sent!
+          </div>
+
+
+        <div class="row contact__container font-poppins ">
+
+            <div class=" contact__right flex-item d-flex flex-column col-xl-4 col-lg-5 col-md-12 col-sm-12 ">
+
+                <div class="row d-flex contact__info mt-30">
+                        <div class=" text-title text-white ">Let's get in touch</div>
+                        <div class="text-mini-desc text-white">We're open for any suggestion or just to have a chat</div>
+                        
+                </div>
+
+                <div class="contact__info mt-50 row">
+                    <div class=" text-icon "><i class="fa-solid fa-location-dot "></i></div>
+                    <div class="  d-flex flex-column">
+                        <div class=" text-mini-title">Address</div>
+                        <div class="address__lg">
+                            <div class="text-mini-desc">33 V. Luna Ave, Diliman,</div>
+                            <div class="text-mini-desc"> Quezon City 1100</div>
+                            <div class="text-mini-desc">Metro Manila</div>
+                        </div>
+                        <div class="address__all">
+                            <div class="text-mini-desc">33 V. Luna Ave, Diliman, Quezon City </div>
+                            <div class="text-mini-desc">1100 Metro Manila</div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="row d-flex contact__info mt-20">
+                    <div class=" text-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="  d-flex flex-column pt-5">
+                        <div class=" text-mini-title">Contact No.</div>
+                        <div class="text-mini-desc">+63 912346781</div>
+                    </div>
+                </div>
+
+                <div class="row d-flex contact__info mt-20">
+                    <div class=" text-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="  d-flex flex-column pt-5">
+                        <div class=" text-mini-title">Email</div>
+                        <div class="text-mini-desc">examplegmail@gmail.com</div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="contact__form flex-item d-flex flex-column col-xl-7 col-lg-7 col-md-12 col-sm-12  mt-20">
+                <div class="d-flex flex-column form-title">
+                    <label for="" class="text-content-title text-bold">Get in Touch</label>
+                    <label for="" class="text-details text-300 pt-10 pr-20">Order now and experience the benefits of our safe, effective and affordable supplement for yourself.
+                    </label>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="d-flex flex-column contact__form__container">
+                            <label for="fullName" class="text-details text-bold">
+                                Name:
+                            </label>
+                            <input type="text" class="" required id="fullName">
+
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="d-flex flex-column contact__form__container">
+                            <label for="subject" class="text-details text-bold">Subject:</label>
+                            <input type="text" class="" required id="subject">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="d-flex flex-column contact__form__container">
+                            <label for="email" class="text-details text-bold">
+                                Email:
+                            </label>
+                            <input type="email" class="" required id="email">
+
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+                        <div class="d-flex flex-column contact__form__container">
+                            <label for="contactNo" class="text-details text-bold">Contact No:</label>
+                            <input type="number" class="" required id="contactNo">
+                        </div>
+                    </div>
+
+                    <div class="col-12 ">
+                        <div class="d-flex flex-column contact__form__container">
+                            <label for="message" class="text-details text-bold ">Message:</label>
+                            <textarea name="" class="" rows="4" required  id="message" ></textarea>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+
+                <button onclick="SendMail()" class="button-one mt-20">Send Message</button>
+            </div>
+
+            
+
+            <!-- <div class="col-12">
+
+            </div> -->
+        </div>
+
+            
+
+        <div class="col-12 contact__map ">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=33 V. Luna Ave, Diliman, Quezon City, 1100 Metro Manila&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+        </div>
+
+       
+    
+      
+
+
+      
+       
+        <div class="contact__footer font-tahoma row justify-content-between">
+            <div class="col-xl-3 col-lg-3 col-md-8 col-sm-12 ">
+                <img src="images/proGsterol-logo.svg" alt="" class="img-fluid">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 pt-20 ">
+                <label for="" class="lb20 text-white">NEED HELP?</label>
+                <div class="row">
+                    <div class="col-6 d-flex flex-column">
+                        <label for="" class="lb16 text-white mt-10">Home</label>
+                        <label for="" class="lb16 text-white mt-10">ProGsterol</label>
+                        <label for="" class="lb16 text-white mt-10">Registration</label>
+                        
+                    </div>
+                    <div class="col-6 d-flex flex-column">
+                        <label for="" class="lb16 text-white mt-10">Clinical Studies</label>
+                        <label for="" class="lb16 text-white mt-10">FAQ'S</label>
+                        <label for="" class="lb16 text-white mt-10">Contact Us</label>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 pt-20">
+                <label for="" class="lb20 text-white">CONNECT WITH US</label>
+                <div class="row">
+                    <div class="col-12 d-flex flex-column">
+                        <label for="" class="lb16 text-white mt-10">+63 912346781</label>
+                        <label for="" class="lb16 text-white mt-10">examplegmail@gmail.com</label>
+                        <label for="" class="lb16 text-white mt-10">33 V. Luna Ave, Diliman, Quezon City, 1100 Metro Manila</label>
+    
+                        <div class="d-flex mt-20">
+                            <!-- <i class="fa-brands fa-facebook-f socmed-logo"></i>
+                            <i class="fa-brands fa-instagram socmed-logo"></i>
+                            <i class="fa-solid fa-envelope socmed-logo"></i> -->
+
+
+                            <!-- <img src="images/icon/facebook.svg" alt="" class="socmed-logo">
+                            <img src="images/icon/instagram-fill.svg" alt="" class="socmed-logo">
+                            <img src="images/icon/icons8-gmail.svg" alt="" class="socmed-logo"> -->
+
+                            <div class="socmed-icon">
+                                <i class="fa-brands fa-facebook-f "></i>
+                            </div>
+                            <div class="socmed-icon">
+                                <i class="fa-brands fa-instagram "></i>
+                            </div>
+                            <div class="socmed-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center card-logo-container">
+                <img src="images/icon/Mastercard-Logo.wine.svg" alt="" class="card-logo">
+                <img src="images/icon/paypal.svg" alt="" class="card-logo">
+                <img src="images/icon/visa (1).svg" alt="" class="card-logo">
+                <img src="images/icon/gcash.svg" alt="" class="card-logo">
+
+            </div>
+        </div>
+
+    </div>
+
+ 
+
+</body>
+</html>
