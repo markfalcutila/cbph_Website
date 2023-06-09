@@ -1,0 +1,1333 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap');
+html{
+   scroll-behavior: smooth!important;
+}
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box!important;
+        -moz-box-sizing: border-box;
+        /* line-height: 1.2!important; */
+    }
+    
+    /* MINI CLASS NAME CSS LIBLARY */
+    
+    /* ----------------------------------------------------------------------------- */
+    /* BACKGROUND COLORS */
+
+    .main-container{
+        height: 100vh;
+        width: 100%;
+        /* background-color: #d1cfcf ; */
+        /* background-color: #666; */
+        position: relative;
+
+    }
+    .navbar{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      width: 100%;
+      height: 80px;
+      border:1px solid white;
+      background: white;
+      padding: 0 10%;
+      color: #060606;
+      text-align: center;
+      position: relative;
+    }
+    .icon{
+        width: 20%;
+        display: flex;
+        height: 100%;
+      }
+      .icon-img{
+        width: 180px;
+  
+    }
+    .navbar-right{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* height: 100%; */
+      width: auto;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+
+    }
+    .navbar-right li{
+      list-style-type: none;
+      padding: 0px 30px;
+      cursor: pointer;
+      margin-top:3px
+    }
+  
+    .navbar-right .menu{
+      font-size: 16px;
+      text-decoration: none;
+      color: #333;
+      font-family: 'Poppins', sans-serif;
+      text-transform: uppercase;
+      cursor: pointer;
+
+    }
+    .navbar-right .menu:after{
+      display:block;
+      content: '';
+      border-bottom: solid 3px #3751c0;  
+      transform: scaleX(0);  
+      transition: transform 300ms ease-in-out;
+    }
+
+    
+   
+    .navbar-right .menu:hover:after{
+      transform: scaleX(1);
+
+    }
+    .navbar-right .menu:hover{
+      color: #3751c0;
+    }
+
+    /* WHEN ACTIVE  */
+    .navbar-right .menu-active{
+      font-size: 16px;
+      text-decoration: none;
+      color: #3751c0;
+      font-family: 'Poppins', sans-serif;
+      text-transform: uppercase;
+      cursor: pointer;
+
+    }
+    .navbar-right .menu-active:after{
+      display:block;
+      content: '';
+      border-bottom: solid 3px #3751c0;  
+      /* transform: scaleX(0);   */
+      transition: transform 300ms ease-in-out;
+    }
+
+
+
+
+   /* Icon 1 */
+   .icon-one {
+      position: fixed;
+      top: 20px;
+      right: 10px;
+      width: 100px;
+      height: 60px;
+      cursor: pointer;
+      display: none;
+      cursor: pointer;
+      z-index: 999;
+   }
+
+    .hamburger {
+      top:20px;
+      left:10%;
+      width: 50px;
+      height: 5px;
+      /* background: #FCFCFC; */
+      background: #3751c0;
+      z-index: 999;
+      position: absolute;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+      transition: 0.5s;
+    }
+    
+    .hamburger:before {
+      top: -10px;
+    }
+    
+    .hamburger:after {
+      top: 10px;
+    }
+    
+    .hamburger-one:before,
+    .hamburger-one:after {
+      content: '';
+      position:absolute;
+      width: 30px;
+      height: 5px;
+      background: #3751c0;
+      /* background:#FCFCFC; */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition:0.5s;
+    }
+    
+    .icon-one.active-one .hamburger-one {
+      background:rgba(0,0,0,0);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    }
+    
+    .icon-one.active-one .hamburger-one:before {
+      top: 0;
+      transform:rotate(45deg);
+    }
+    
+    .icon-one.active-one .hamburger-one:after {
+      top: 0;
+      transform:rotate(135deg);
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+   }
+
+   .show-navbar{
+      display: block;
+      
+   }
+   .main-container{
+      /* background-color: rgba(0, 0, 0, 0.5);  */
+
+   }
+   .sidenav{
+      position: relative;
+      z-index: 999;
+   }
+ 
+   .mobile-nav{
+      height: 100vh;
+      width: 50%;
+      background: #fff;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: -5%;
+      padding: 0 60px;
+      box-sizing: border-box;
+      /* opacity: 0; */
+      display: none;
+   }
+   .mobile-nav-body{
+      /* display: none; */
+      opacity: 0;
+   }
+  .show-mobile-navbar{
+   /* display: block; */
+   opacity: 1;
+   transform: translateX(-10%);
+   transition: transform 0.3s ease-in-out; 
+  }
+
+   @media screen and (max-width: 780px) {
+      .navbar-right {
+        background-color: olive;
+        display: none;
+      }
+      .mobile-navbar{
+        
+         display: block;
+      }
+
+      .icon-one {
+         display: block;
+      }
+     
+    }
+
+
+    .section-one{
+      height: 800px;
+      padding: 0 10%;
+      width: 100%;
+    }
+    /* .section-right:after{
+     content: '';
+     background-image: url(images/icon/Asset\ 4.svg);
+     position:absolute;
+     top: 20px;
+     right: 0;
+     left: 20%;
+     bottom:50%;
+     z-index: 10;
+     opacity: 0.3;
+   
+   } */
+   .img-sec1{
+      z-index: 9999;
+      height: 85%;
+      
+   }
+   .img-dot{
+        position: absolute;
+        top: 20px;
+        right: -5%;
+        left: 20%;
+        bottom:50%;
+        z-index: 10;
+        opacity: 0.3;
+   }
+    .section-two{
+      height: 800px;
+      padding: 0 10%;
+      width: 100%;
+      margin: 100px 0;
+    }
+    .section-three{
+      height: 500px;
+      width: 100%;
+      background-color: #191F6C;
+      /* background-image: url(images/bg/blue-bg.jpg);
+      background-image:
+      linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+      url('images/background.jpg'); */
+      background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(images/bg/blue-bg.jpg);
+      background-size: cover;
+      margin-bottom: 50px;
+      padding: 0 10%;
+      margin: 100px 0;
+    }
+
+    .section-four{
+      /* height: 800px; */
+      padding: 100px 10%;
+      width: 100%;
+      margin: 100px 0;
+
+    }
+
+    .section-five{
+      width: 100%;
+      background-color: #191F6C;
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/imagesss/tester-bg.jpeg);
+      background-size: cover;
+      background-position: center;
+      /* background-attachment: scroll; */
+      padding: 100px 10%;
+      margin: 100px 0;
+
+    }
+
+    .section-five-text-container{
+        /* width: 300px; */
+        /* border: 1px solid red; */
+    }
+    .progi-logo-white-two{
+      /* position: absolute; */
+      /* top: 40px; */
+      /* border: 1px solid red; */
+      width: 400px;
+   }
+
+   .section-six{
+      /* height: 800px; */
+      padding: 100px 10%;
+      width: 100%;
+      margin: 100px 0;
+
+
+   }
+
+   .section-for-video{
+    /* height: 500px; */
+    /* width: 100%; */
+    width: 100%;
+    /* border: 1px solid red; */
+    /* position: absolute; */
+    bottom: 0;
+
+   }
+   .section-for-video .video-container{
+        width: 100%;
+        /* height: 100%; */
+        position: relative;
+   }
+   
+   .thumbnail {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    /* background-image: url(images/corn-2.jpg); */
+  }
+   .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100% ;
+      padding: 0 20px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .box1{
+      /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+      /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      height: 320px;
+      width: 450px;
+      /* border: 1px solid red; */
+      padding: 30px 30px;
+      border-radius: 30px;
+    }
+    .testimonial-picture{
+      height: 50px!important;
+      width: 50px!important;
+      border-radius: 50%;
+    }
+    .fa-star{
+      color:#191F6C;
+    }
+    .quoate{
+      color:#191F6C;
+      font-size: 70px;
+      position: absolute;
+      top: 20px;
+    }
+
+    .section-seven{
+            
+        height: 500px;
+        padding: 0 10%;
+        width: 100%;
+        margin-top: 200px;
+        margin-bottom: 200px;
+
+    }
+   
+
+  .contact__container{
+    padding: 50px 10% 0 10%;
+    width: 100%;
+    margin: 100px 0;
+    display: flex ;
+    justify-content: space-between;
+  }
+
+  .contact__map{
+    height: auto;
+    max-height: 500px;
+  }
+
+  .contact__container .button-one{
+    padding: 15px 20px;
+    width:auto;
+    font-size: 15px;
+    background: #191F6C;
+    color: white;
+    width: 200px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  .contact__container .button-one:hover{
+    background: rgb(35, 56, 139);
+    color: white;
+    border: none;
+    outline: none;
+  }
+  .contact__container .button-one:active{
+    border: none;
+    outline: none;
+  }
+
+  
+
+  .contactUs__page .text-page-header{
+    font-size: 80px;
+  }
+  .contactUs__page .text-content-title{
+    font-size: 50px;
+  }
+  .contactUs__page .text-title{
+    font-size: 30px;
+
+  }
+  .contactUs__page .text-details{
+    font-size: 16px;
+
+  }
+
+  .contact__right{
+    /* background: #191F6C; */
+      width: 100%;
+      background-color: #14344E;
+      padding: 30px 50px;
+      /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/bg/cbph-contact-us.jpg); */
+      background-size: cover;
+      background-position: left center;
+      display: flex;
+      justify-content: center;
+      order: 1;
+
+  }
+    .section-eight{
+        /* height: 900px; */
+        padding: 0 10%;
+        width: 100%;
+        margin: 100px 0;
+        /* border: 1px solid red; */
+    }
+    .contact__form__container{
+      margin-top: 50px;
+    }
+    .contact__form{
+      order: 2;
+      padding: 0 50px;
+
+    }
+    .contact__form input[type="text"]{
+        border:none;
+        border-bottom: 1px solid #555;
+        outline: none;
+        font-size: 15px;
+        margin: 15px 0;
+        width: 100%;
+        padding: 5px 0px;
+      }
+      .contact__form textarea{
+        border: none;
+        border-bottom: 1px solid #555;
+        outline: none;
+        font-size: 15px;
+        margin: 15px 0;
+        width: 100%;
+        padding: 5px 0px;
+        resize: none;
+      }
+      .section-eight input:focus{
+        border: none;
+        /* border-bottom: 2px solid #CA1A23; */
+        border-bottom: 1px solid #191F6C;
+        
+      
+      }
+      .contact__form textarea:focus{
+        border: none;
+        border-bottom: 1px solid #191F6C;
+      
+      }
+      .contact__right .text-mini-title{
+        font-size: 20px;
+        color: #f4f4f4;
+  
+      }
+      .contact__right .text-icon{
+        font-size: 30px;
+        color: #f4f4f4;
+        margin-right: 30px;
+
+      }
+      .contact__right .text-mini-desc{
+        font-size: 15px;
+        color: #f4f4f4;
+        
+      }
+      .section-nine{
+        padding: 100px 10%;
+        width: 100%;
+        margin: 100px 0;
+  
+     }
+     .progi__content2{
+        padding: 0 10%;
+        width: 100%;
+        margin: 200px 0;
+  
+     }
+     .progi__content1{
+        padding: 0 10%;
+        width: 100%;
+  
+     }
+     .prod-combine-container{
+      /* height: 560px;
+      width: 100%; */
+      height: auto;
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* border: 1px solid green; */
+      position: relative;
+      padding: 20px 30px;
+     }
+     .img-prod-combine{
+      height: 560px;
+      width: auto;
+      z-index: 999;
+     }
+
+     .img-prod-combine-bg{
+      position: absolute;
+      opacity: 0.5;
+      z-index: 99;
+      top: 0;
+ 
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+     }
+
+    .contact__footer{
+      margin: 100px 0 100px 0;
+      /* height: 500px; */
+      padding: 50px 10%;
+      width: 100%;
+      background-color: #14344E ;
+      /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/imagesss/tester-bg.jpeg); */
+      background-size: cover;
+      background-position: center;
+    }
+    .footer-logo{
+      width: 200px;
+    }
+
+    .footer-inp{
+      border: none;
+      font-size: 15px;
+      background: white;
+      color: white;
+      width: 100%;
+      display: flex;
+      position: relative;
+      border-radius: 25px;
+      outline: none;
+
+    }
+    .footer-inp input[type="text"]{
+      width: 100%;
+      padding:15px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      width: 70%;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border: none;
+    }
+    .footer-inp button{
+      position:absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      cursor: pointer;
+      width: 30%;
+      color:white;
+      border: none;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      background: #CA1A23;
+      outline: none;
+      
+    }
+    .socmed-logo{
+      color: white;
+      font-size: 30px;
+      margin-right: 20px;
+    }
+
+
+    /* CONTACT US FOOTER  */
+    .footer{
+      margin: 100px 0 100px 0;
+      height: 500px;
+      padding: 50px 10%;
+      width: 100%;
+      background-color: #14344E ;
+      /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/imagesss/tester-bg.jpeg); */
+      background-size: cover;
+      background-position: center;
+    }
+    .footer-logo{
+      width: 200px;
+    }
+
+    .footer-inp{
+      border: none;
+      font-size: 15px;
+      background: white;
+      color: white;
+      width: 100%;
+      display: flex;
+      position: relative;
+      border-radius: 25px;
+      outline: none;
+
+    }
+    .footer-inp input[type="text"]{
+      width: 100%;
+      padding:15px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      width: 70%;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border: none;
+    }
+    .footer-inp button{
+      position:absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      cursor: pointer;
+      width: 30%;
+      color:white;
+      border: none;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      background: #CA1A23;
+      outline: none;
+      
+    }
+    .socmed-logo{
+      color: white;
+      font-size: 30px;
+      margin-right: 20px;
+    }
+
+
+    .img-sec2{
+      z-index: 999;
+      width: 100%;
+      height: 65%;
+    }
+    .progi-poster{
+        position: absolute;
+        bottom: 0;
+    }
+    .circle-dot{
+      position: absolute;
+      top: 10%;
+      bottom: 0;
+      right:10%;
+      left: 0;
+      opacity: 0.2;
+      z-index: 10;
+
+    }
+    .char-icon{
+      height: 120px;
+      /* border: 1px solid red; */
+      width: 180px;
+      /* border: 1px solid red; */
+   }
+    .char-icon1{
+      height:120px;
+      width: 100px;
+      /* border: 1px solid red; */
+   }
+ 
+    /* --------------------------------- */
+    /* PROGSTEROL PAGE */
+    .progi-section-one{
+        height: 600px;
+        padding: 0 10%;
+        width: 100%;
+        margin-bottom: 100px;
+      }
+    .progi-section-three{
+        height: 800px;
+        padding: 0 10%;
+        width: 100%;
+        margin-bottom: 100px;
+      }
+     .progi-dot{
+        position: absolute;
+        top: 0;
+        right: 0;
+        right: 100px;
+        z-index: 10;
+        opacity: 0.3;
+     }
+     .homepg-progi-dot{
+        position: absolute;
+        top: 0;
+        right: 20px;
+        height: 50%;
+        z-index: 10;
+        opacity: 0.3;
+     }
+    .progi-prod{
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 70%;
+    }
+    .progi-drinking-water{
+        position: absolute;
+        bottom:0;
+        right: 0;
+        width: 95%;
+    }
+     .progi-section-two{
+        /* height: 600px; */
+        width: 100%;
+        background-color: #191F6C;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5 )), url(images/bg/sweet-corn.jpg);
+        background-size: cover;
+        background-position:top center ;
+        /* background-attachment: scroll; */
+        padding: 100px 3%;
+        margin: 100px 0;
+      
+      }
+
+      .text-semi-white{
+        color: #ccbbbb;
+      }
+
+      .text-icon-title{
+        height: 60px;
+        /* border: 1px solid red!important; */
+        display: flex;
+        align-items: start;
+      }
+
+      .text-icon-details{
+        height: 80px;
+        display: flex;
+        align-items: start;
+        /* border: 1px solid red!important; */
+      }
+    /* --------------------------------- */
+
+    
+    .color-theme{
+      color: #191F6C;
+    }
+
+    .button-one{
+      padding: 15px 20px;
+      width:auto;
+      font-size: 15px;
+      background: #191F6C;
+      color: white;
+      width: 200px;
+      border-radius: 25px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+    .button-one:hover{
+      font-size: 15px;
+      background: rgb(35, 56, 139);
+      color: white;
+      border: none;
+      outline: none;
+    }
+    .button-one:active{
+      border: none;
+      outline: none;
+    }
+
+    
+    .button-two{
+      padding: 15px 20px;
+      width:auto;
+      font-size: 15px;
+      background: white;
+      color: #3a477c;
+      width: 200px;
+      border-radius: 25px;
+      cursor: pointer;
+      outline: none;
+      border: 1px solid #3a477c ;
+
+
+    }
+    .button-two:hover{
+      background: #3a477c;
+      color: #ffffff;
+      outline: none;
+      /* border: none; */
+   
+    }
+    .button-two:focus{
+      outline: none;
+   
+    }
+    .button-three{
+      width: 200px;
+      padding: 5px 20px;
+      font-size: 15px;
+      background: white;
+      border: 1px solid #3a477c ;
+      color: #3a477c;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+ 
+    .button-three:hover{
+      background: #3a477c;
+      color: #ffffff;
+    }
+   
+    .watch-icon{
+     font-size: 20px;
+     color: #191F6C;
+     padding: 10px 10px 10px 12px;
+     border-radius: 50%;
+     height: 40px;
+     width: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+
+    .theme-red{
+      color: #CA1A23;
+    }
+    .icon-title-ndi{
+      /* height: 50px; */
+      
+      /* border: 1px solid red; */
+
+    }
+  
+    /* ------------------------------------- */
+    /* WATCH VIDEO MODAL */
+    .modal-video{
+     display: none;
+     position: fixed; 
+     background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+     z-index: 999; /* Sit on top of other elements */
+     left: 0;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     overflow: hidden; /* Enable scrolling if needed */
+
+    }
+    .modal-content{
+      /* background-color: #fefefe; */
+      background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+      margin: 15% auto; /* Center the modal on the screen */
+      border: 1px solid #888;
+      width: 600px;
+      position: relative;
+      padding: 20px;
+    }
+    .video-container{
+      height: 100%;
+      width: 100%;
+    }
+    .videoContainer video{
+      height: 100%;
+      width:  100%;
+    }
+
+    /* Define the CSS class to adjust the height and width of the video */
+   .video-container video {
+      height: 100%;
+      width:  100%;
+   }
+ 
+    .close {
+      /* color: #aaa; */
+      color: #fff;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: -30px;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+
+    /* -------------------------------------- */
+    
+    .section-three-numbers-container{
+        width: 200px;
+    }
+   .section-three-numbers:before{
+      content: '';
+      position: absolute;
+      height: 100px;
+      background: red;
+      width: 8px;
+      top: 10px;
+      /* display: flex; */
+      /* align-items: center; */
+      
+
+   }
+
+   .progi-logo-white{
+      position: absolute;
+      top: 40px;
+      left: 13%;
+      width: 300px;
+   }
+
+   .img-stick-front{
+      position: absolute;
+      top: 15%;
+      right:20%;
+      width: 40%;
+   }
+   .img-stick-back{
+      position: absolute;
+      bottom: 20%;
+      right:5%;
+      width: 40%;
+   }
+
+   /* CLINICAL STUDIES */
+   .text-page-header{
+    font-size: 80px;
+   }
+   .text-content-title{
+    font-size: 50px;
+    
+   }
+   .text-semi-content-title{
+    font-size: 40px;
+    
+   }
+   .text-title{
+    font-size: 30px;
+
+   }
+   .faqs-subtitle{
+    font-size: 20px;
+    
+   }
+   .faqs-subtitle:after{
+    content: '';
+    /* border: 1px solid red; */
+    /* background-color: red;
+    width: 300px;
+    height: 2px; */
+    
+   }
+   .text-semi-title{
+    font-size: 25px;
+    font-weight: bold;
+
+   }
+   .text-details{
+    font-size: 16px;
+
+   }
+
+
+   .registration-container{
+    height: 400px;
+    width: 100%;
+    background-color: #191F6C;
+    /* background-image: url(images/bg/blue-bg.jpg);
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('images/background.jpg'); */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/imagesss/tester-bg.jpeg);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 50px;
+    padding: 0 10%;
+    margin: 0 100px 0 0;
+  }
+   .clinical_studies{
+    height: 400px;
+    width: 100%;
+    background-color: #191F6C;
+    /* background-image: url(images/bg/blue-bg.jpg);
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('images/background.jpg'); */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/clinical-studies-bg\ 1.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 50px;
+    padding: 0 10%;
+    margin: 0 100px 0 0;
+  }
+
+
+   .contact__us{
+    height: 500px;
+    width: 100%;
+    background-color: #191F6C;
+    /* background-image: url(images/bg/blue-bg.jpg);
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('images/background.jpg'); */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/bg/contact-us-bg2.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 50px;
+    padding: 0 10%;
+    margin: 0 100px 0 0;
+  }
+
+   .faqs{
+    height: 500px;
+    width: 100%;
+    background-color: #191F6C;
+    /* background-image: url(images/bg/blue-bg.jpg);
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('images/background.jpg'); */
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(images/bg/faqs-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 50px;
+    padding: 0 10%;
+    margin: 0 100px 0 0;
+  }
+
+  .dot-icon{
+    
+  }
+
+  .container-sxxx{
+    margin-bottom: 500px;
+    padding-bottom: 500px;
+  }
+
+  .cs-content-container{
+    margin:50px 0px;
+  }
+
+  .text-details-red{
+    color: #C83C42;
+    font-weight: bold;
+  }
+  .text-details-blue{
+    color: #627FB0;
+    font-weight: bold;
+  }
+
+  .cstudies-img{
+    margin-top: 50px;
+  }
+
+.accordion-section .panel-default > .panel-heading {
+    border: 0;
+    /* background: #f4f4f4; */
+    padding: 0;
+    border-bottom: 1px solid #f6eded;
+}
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    /* font-style: italic;
+    font-size: 1.5rem; */
+    /* font-weight: bold; */
+    /* color: #24313C; */
+    color: #525f69;
+    text-decoration: none;
+    font-size: 20px;
+    
+
+}
+.accordion-section .panel-default .panel-title  {
+    padding: 10px 20px;
+    position: relative;
+
+}
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    content: "\f068";
+    color: #C83C42;
+    float: right;
+    position: absolute;
+    top: 0;
+    /* margin-top: -5px; */
+    right: 0;
+}
+
+
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: "\2b";
+}
+.accordion-section .panel-default .panel-body {
+    font-size: 16px;
+    padding: 20px 70px  10px 70px;
+    border-bottom: 1px solid #f6eded;
+
+}
+.faq-four-dots{
+  /* position: absolute; */
+  width: 45px;
+  left: 0;
+  margin-left: 10px;
+}
+
+.contactUs__page .text-page-header{
+  font-size: 80px;
+}
+.contactUs__page .text-content-title{
+  font-size: 50px;
+}
+.contactUs__page .text-title{
+  font-size: 30px;
+
+}
+.contactUs__page .text-details{
+  font-size: 16px;
+
+}
+
+/* ------------------------------------------ */
+/* FOR RESPONSIVE BREAKPOINT  */
+/* bp for bootstrap */
+  /* X-Small	None	<576px
+  Small	sm	≥576px
+  Medium	md	≥768px
+  Large	lg	≥992px
+  Extra large	xl	≥1200px
+  Extra extra large	xxl	≥1400px */
+
+  /* breakpoint for width */
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .contact__container{
+    padding: 20px 10% 0 10%;
+    display: flex ;
+    justify-content: center;
+    margin: 20px 0;
+
+  }
+  .contact__us{
+    height: 200px;
+ 
+  }
+
+  .contact__right{
+    order: 2;
+    margin-top: 50px;
+  }
+
+  .contact__form{
+    order: 1;
+
+  }
+
+  .contactUs__page .text-page-header{
+    font-size: 30px;
+  }
+  .contactUs__page .text-content-title{
+    font-size: 25px;
+  }
+  .contactUs__page .text-title{
+    font-size: 30px;
+  
+  }
+  .contactUs__page .text-details{
+    font-size: 12px;
+  
+  }
+  .contact__form__container{
+    margin-top: 10px;
+  }
+
+  .contact__container .button-one{
+    padding: 15px 20px;
+    width:100%;
+    font-size: 12px;
+    background: #191F6C;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .contact__container{
+    padding: 20px 10% 0 10%;
+    display: flex ;
+    justify-content: center;
+    
+  }
+
+  .contact__us{
+    height: 300px;
+ 
+  }
+
+  .contact__right{
+    order: 2;
+    margin-top: 50px;
+  }
+
+  .contact__form{
+    order: 1;
+
+  }
+
+ 
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .contact__container{
+    padding: 20px 10% 0 10%;
+    display: flex ;
+    justify-content: center;
+    
+  }
+
+  .contact__us{
+    height: 300px;
+ 
+  }
+
+  .contact__right{
+    order: 2;
+    margin-top: 50px;
+  }
+
+  .contact__form{
+    order: 1;
+
+  }
+
+ 
+
+
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .contact__right{
+    order: 1;
+  }
+
+  .contact__form{
+    order: 2;
+
+  }
+
+}
+
+
+
