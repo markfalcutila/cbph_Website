@@ -1052,7 +1052,7 @@ Extra extra large	xxl	≥1400px */
   order: 1;
 }
 .main__page .section__seven .section__seven__left img {
-  border-top-right-radius: 150px;
+  border-top-right-radius: 200px;
   width: 100%;
   max-height: 400px;
   height: auto;
@@ -1119,6 +1119,36 @@ Extra extra large	xxl	≥1400px */
   width: 100%;
   margin: 100px 0;
 }
+.about__page .progi__content__mission {
+  width: 100%;
+  background-color: #191F6C;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg/about-us-wide.png);
+  background-size: cover;
+  background-position: left center center;
+  background-repeat: no-repeat;
+  padding: 150px 3%;
+  margin: 100px 0;
+  opacity: 0.9;
+  display: flex;
+  justify-content: end;
+  display: block;
+}
+.about__page .progi__content__mission label {
+  color: white;
+  text-shadow: 0 2px 4px rgba(194, 176, 176, 0.3);
+}
+.about__page .progi__content__mission__mobile {
+  padding: 0 10%;
+  width: 100%;
+  margin: 100px 0;
+  display: none;
+}
+.about__page .progi__content__mission__mobile .progi__content3__mobile__left {
+  order: 2;
+}
+.about__page .progi__content__mission__mobile .progi__content3__mobile__right {
+  order: 1;
+}
 .about__page .progi__content3 {
   /* height: 600px; */
   width: 100%;
@@ -1173,6 +1203,21 @@ Extra extra large	xxl	≥1400px */
 }
 .about__page .text-details {
   font-size: 16px;
+}
+.about__page .img__curves1 {
+  border-top-left-radius: 200px;
+}
+.about__page .img__curves2 {
+  border-top-right-radius: 200px;
+}
+.about__page .img__curves3 {
+  border-top-left-radius: 200px;
+}
+.about__page .img__curves4 {
+  border-top-right-radius: 200px;
+}
+.about__page .img__curves5 {
+  border-top-left-radius: 200px;
 }
 
 .registration__page .registration__header {
@@ -1662,10 +1707,41 @@ Extra extra large	xxl	≥1400px */
     margin: 100px 0;
   }
   .about__page .progi__content2 .progi__content2__left {
-    order: 2;
+    order: 1;
   }
   .about__page .progi__content2 .progi__content2__right {
+    order: 2;
+  }
+  .about__page .progi__content__mission {
+    width: 100%;
+    background-color: #191F6C;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg/about-us-wide.png);
+    background-size: cover;
+    background-position: left center center;
+    background-repeat: no-repeat;
+    padding: 150px 3%;
+    margin: 100px 0;
+    opacity: 0.9;
+    display: flex;
+    justify-content: end;
+    display: none;
+  }
+  .about__page .progi__content__mission label {
+    color: white;
+    text-shadow: 0 2px 4px rgba(194, 176, 176, 0.3);
+  }
+  .about__page .progi__content__mission__mobile {
+    padding: 0 10%;
+    width: 100%;
+    margin: 100px 0;
+    display: block;
+  }
+  .about__page .progi__content__mission__mobile .progi__content__mission__mobile__left {
+    order: 2;
+  }
+  .about__page .progi__content__mission__mobile .progi__content__mission__mobile__right {
     order: 1;
+    margin-top: 20px;
   }
   .about__page .progi__content3 {
     display: none;
@@ -1710,6 +1786,21 @@ Extra extra large	xxl	≥1400px */
   }
   .about__page .text-semi-title {
     font-size: 14px;
+  }
+  .about__page .img__curves1 {
+    border-top-left-radius: 0;
+  }
+  .about__page .img__curves2 {
+    border-top-right-radius: 0;
+  }
+  .about__page .img__curves3 {
+    border-top-left-radius: 0;
+  }
+  .about__page .img__curves4 {
+    border-top-right-radius: 0;
+  }
+  .about__page .img__curves5 {
+    border-top-left-radius: 0;
   }
   .registration__page .registration__header {
     height: 200px;
@@ -2145,6 +2236,37 @@ Extra extra large	xxl	≥1400px */
   .about__page .progi__content2 .progi__content2__right {
     order: 1;
   }
+  .about__page .progi__content__mission {
+    width: 100%;
+    background-color: #191F6C;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg/about-us-wide.png);
+    background-size: cover;
+    background-position: left center center;
+    background-repeat: no-repeat;
+    padding: 150px 3%;
+    margin: 100px 0;
+    opacity: 0.9;
+    display: flex;
+    justify-content: end;
+    display: none;
+  }
+  .about__page .progi__content__mission label {
+    color: white;
+    text-shadow: 0 2px 4px rgba(194, 176, 176, 0.3);
+  }
+  .about__page .progi__content__mission__mobile {
+    padding: 0 10%;
+    width: 100%;
+    margin: 100px 0;
+    display: block;
+  }
+  .about__page .progi__content__mission__mobile .progi__content__mission__mobile__left {
+    order: 1;
+  }
+  .about__page .progi__content__mission__mobile .progi__content__mission__mobile__right {
+    order: 2;
+    margin-top: 20px;
+  }
   .about__page .progi__content3 {
     display: none;
   }
@@ -2188,6 +2310,21 @@ Extra extra large	xxl	≥1400px */
   }
   .about__page .text-semi-title {
     font-size: 16px;
+  }
+  .about__page .img__curves1 {
+    border-top-left-radius: 0px;
+  }
+  .about__page .img__curves2 {
+    border-top-right-radius: 0px;
+  }
+  .about__page .img__curves3 {
+    border-top-left-radius: 0px;
+  }
+  .about__page .img__curves4 {
+    border-top-right-radius: 0px;
+  }
+  .about__page .img__curves5 {
+    border-top-left-radius: 0px;
   }
   .registration__page .registration__header {
     height: 200px;
@@ -2615,6 +2752,37 @@ Extra extra large	xxl	≥1400px */
   .about__page .progi__content2 .progi__content2__right {
     order: 2;
   }
+  .about__page .progi__content__mission {
+    width: 100%;
+    background-color: #191F6C;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg/about-us-wide.png);
+    background-size: cover;
+    background-position: 40% 0;
+    background-repeat: no-repeat;
+    padding: 150px 3%;
+    margin: 100px 0;
+    opacity: 0.9;
+    display: flex;
+    justify-content: end;
+    display: block;
+  }
+  .about__page .progi__content__mission label {
+    color: white;
+    text-shadow: 0 2px 4px rgba(194, 176, 176, 0.3);
+  }
+  .about__page .progi__content__mission__mobile {
+    padding: 0 10%;
+    width: 100%;
+    margin: 100px 0;
+    display: none;
+  }
+  .about__page .progi__content__mission__mobile .progi__content__mission__mobile__left {
+    order: 1;
+  }
+  .about__page .progi__content__mission__mobile .progi__content__mission__mobile__right {
+    order: 2;
+    margin-top: 20px;
+  }
   .about__page .progi__content3 {
     display: none;
   }
@@ -2665,6 +2833,21 @@ Extra extra large	xxl	≥1400px */
     max-width: 100%;
     height: auto;
     max-height: 300px;
+  }
+  .about__page .img__curves1 {
+    border-top-left-radius: 120px;
+  }
+  .about__page .img__curves2 {
+    border-top-right-radius: 120px;
+  }
+  .about__page .img__curves3 {
+    border-top-left-radius: 120px;
+  }
+  .about__page .img__curves4 {
+    border-top-right-radius: 120px;
+  }
+  .about__page .img__curves5 {
+    border-top-left-radius: 120px;
   }
   .registration__page .registration__header {
     height: 500px;
@@ -3160,6 +3343,24 @@ Extra extra large	xxl	≥1400px */
     width: 100%;
     margin: 100px 0;
   }
+  .about__page .progi__content__mission {
+    width: 100%;
+    background-color: #191F6C;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg/about-us-wide.png);
+    background-size: cover;
+    background-position: left center center;
+    background-repeat: no-repeat;
+    padding: 150px 3%;
+    margin: 100px 0;
+    opacity: 0.9;
+    display: flex;
+    justify-content: end;
+    display: block;
+  }
+  .about__page .progi__content__mission label {
+    color: white;
+    text-shadow: 0 2px 4px rgba(194, 176, 176, 0.3);
+  }
   .about__page .progi__content3 {
     /* height: 600px; */
     width: 100%;
@@ -3182,7 +3383,7 @@ Extra extra large	xxl	≥1400px */
     padding: 0 10%;
     width: 100%;
     margin: 100px 0;
-    display: none;
+    display: block;
   }
   .about__page .progi__content3__mobile .progi__content3__mobile__left {
     order: 2;
@@ -3221,6 +3422,21 @@ Extra extra large	xxl	≥1400px */
     max-width: 100%;
     height: auto;
     max-height: 100%;
+  }
+  .about__page .img__curves1 {
+    border-top-left-radius: 150px;
+  }
+  .about__page .img__curves2 {
+    border-top-right-radius: 150px;
+  }
+  .about__page .img__curves3 {
+    border-top-left-radius: 150px;
+  }
+  .about__page .img__curves4 {
+    border-top-right-radius: 150px;
+  }
+  .about__page .img__curves5 {
+    border-top-left-radius: 150px;
   }
   .registration__page .registration__header {
     height: 500px;
