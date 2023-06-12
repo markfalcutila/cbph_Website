@@ -18,6 +18,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <!-- aimation js -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -104,7 +108,7 @@
         </div>
 
         <div class="contact__us d-flex align-items-center  justify-content-center">
-            <label for="" class="text-page-header text-white text-bold">Contact Us</label>
+            <label for="" class="text-page-header text-white text-bold" data-aos="zoom-in">Contact Us</label>
         </div>
         <!-- section one -->
 
@@ -120,20 +124,20 @@
 
                 <div class="row d-flex contact__info mt-30">
                         <div class=" text-title text-white ">Let's get in touch</div>
-                        <div class="text-mini-desc text-white">We're open for any suggestion or just to have a chat</div>
+                        <div class="text-mini-desc text-white" >We're open for any suggestion or just to have a chat</div>
                         
                 </div>
 
                 <div class="contact__info mt-50 row">
-                    <div class=" text-icon "><i class="fa-solid fa-location-dot "></i></div>
+                    <div class=" text-icon " data-aos="flip-right"><i class="fa-solid fa-location-dot "></i></div>
                     <div class="  d-flex flex-column">
                         <div class=" text-mini-title">Address</div>
-                        <div class="address__lg">
+                        <div class="address__lg" data-aos="fade-up">
                             <div class="text-mini-desc">33 V. Luna Ave, Diliman,</div>
                             <div class="text-mini-desc"> Quezon City 1100</div>
                             <div class="text-mini-desc">Metro Manila</div>
                         </div>
-                        <div class="address__all">
+                        <div class="address__all" data-aos="fade-up">
                             <div class="text-mini-desc">33 V. Luna Ave, Diliman, Quezon City </div>
                             <div class="text-mini-desc">1100 Metro Manila</div>
                         </div>
@@ -142,19 +146,19 @@
                 </div>
 
                 <div class="row d-flex contact__info mt-20">
-                    <div class=" text-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class=" text-icon" data-aos="flip-right"><i class="fa-solid fa-phone"></i></div>
                     <div class="  d-flex flex-column pt-5">
                         <div class=" text-mini-title">Contact No.</div>
-                        <div class="text-mini-desc">
+                        <div class="text-mini-desc" data-aos="fade-up">
                             +632 8282 5227</div>
                     </div>
                 </div>
 
                 <div class="row d-flex contact__info mt-20">
-                    <div class=" text-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class=" text-icon" data-aos="flip-right"><i class="fa-solid fa-envelope"></i></div>
                     <div class="  d-flex flex-column pt-5">
                         <div class=" text-mini-title">Email</div>
-                        <div class="text-mini-desc">info@clearbridgemedical.com.ph</div>
+                        <div class="text-mini-desc" data-aos="fade-up">info@clearbridgemedical.com.ph</div>
                     </div>
                 </div>
 
@@ -163,13 +167,13 @@
             <div class="contact__form flex-item d-flex flex-column col-xl-7 col-lg-7 col-md-12 col-sm-12  mt-20">
                 <div class="d-flex flex-column form-title">
                     <label for="" class="text-content-title text-bold">Get in Touch</label>
-                    <label for="" class="text-details text-300 pt-10 pr-20">Order now and experience the benefits of our safe, effective and affordable supplement for yourself.
+                    <label for="" class="text-details text-300 pt-10 pr-20" data-aos="fade-up">Order now and experience the benefits of our safe, effective and affordable supplement for yourself.
                     </label>
                 </div>
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="d-flex flex-column contact__form__container">
-                            <label for="fullName" class="text-details text-bold">
+                            <label for="fullName" class="text-details text-bold"  >
                                 Name:
                             </label>
                             <input type="text" class="" required id="fullName">
@@ -184,7 +188,7 @@
                     </div> -->
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
                         <div class="d-flex flex-column contact__form__container">
-                            <label for="email" class="text-details text-bold">
+                            <label for="email" class="text-details text-bold"  >
                                 Email:
                             </label>
                             <input type="email" class="" required id="email">
@@ -193,7 +197,7 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
                         <div class="d-flex flex-column contact__form__container">
-                            <label for="contactNo" class="text-details text-bold">Contact No:</label>
+                            <label for="contactNo" class="text-details text-bold" >Contact No:</label>
                             <input type="number" class="" required id="contactNo">
                         </div>
                     </div>
@@ -233,44 +237,35 @@
       
        
         <div class="contact__footer font-tahoma row justify-content-between">
-            <div class="col-xl-3 col-lg-3 col-md-8 col-sm-12 ">
-                <img src="images/proGsterol-logo.svg" alt="" class="img-fluid">
+            <div class="col-lg-3 col-md-8 col-sm-5">
+                <img src="images/proGsterol-logo.svg" alt="" class="img-fluid" style="width:100%;">
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 pt-20 ">
-                <label for="" class="lb20 text-white">NEED HELP?</label>
+                <label for="" class="text-footer-title text-white">NEED HELP?</label>
                 <div class="row">
                     <div class="col-6 d-flex flex-column">
-                        <label for="" class="lb16 text-white mt-10">Home</label>
-                        <label for="" class="lb16 text-white mt-10">ProGsterol</label>
-                        <label for="" class="lb16 text-white mt-10">Registration</label>
+                        <label for="" class="text-details text-white mt-10">Home</label>
+                        <label for="" class="text-details text-white mt-10">ProGsterol</label>
+                        <label for="" class="text-details text-white mt-10">Registration</label>
                         
                     </div>
                     <div class="col-6 d-flex flex-column">
-                        <label for="" class="lb16 text-white mt-10">Clinical Studies</label>
-                        <label for="" class="lb16 text-white mt-10">FAQ'S</label>
-                        <label for="" class="lb16 text-white mt-10">Contact Us</label>
+                        <label for="" class="text-details text-white mt-10">Clinical Studies</label>
+                        <label for="" class="text-details text-white mt-10">FAQ'S</label>
+                        <label for="" class="text-details text-white mt-10">Contact Us</label>
                         
                     </div>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 pt-20">
-                <label for="" class="lb20 text-white">CONNECT WITH US</label>
+                <label for="" class="text-footer-title text-white">CONNECT WITH US</label>
                 <div class="row">
                     <div class="col-12 d-flex flex-column">
-                        <label for="" class="lb16 text-white mt-10">+632 8282 5227</label>
-                        <label for="" class="lb16 text-white mt-10">info@clearbridgemedical.com.ph</label>
-                        <label for="" class="lb16 text-white mt-10">33 V. Luna Ave, Diliman, Quezon City, 1100 Metro Manila</label>
+                        <label for="" class="text-details text-white mt-10">+632 8282 5227</label>
+                        <label for="" class="text-details text-white mt-10">info@clearbridgemedical.com.ph</label>
+                        <label for="" class="text-details text-white mt-10">33 V. Luna Ave, Diliman, Quezon City, 1100 Metro Manila</label>
     
                         <div class="d-flex mt-20">
-                            <!-- <i class="fa-brands fa-facebook-f socmed-logo"></i>
-                            <i class="fa-brands fa-instagram socmed-logo"></i>
-                            <i class="fa-solid fa-envelope socmed-logo"></i> -->
-
-
-                            <!-- <img src="images/icon/facebook.svg" alt="" class="socmed-logo">
-                            <img src="images/icon/instagram-fill.svg" alt="" class="socmed-logo">
-                            <img src="images/icon/icons8-gmail.svg" alt="" class="socmed-logo"> -->
-
                             <div class="socmed-icon">
                                 <i class="fa-brands fa-facebook-f "></i>
                             </div>
@@ -296,7 +291,14 @@
 
     </div>
 
- 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        easing: "ease-in-out",
+    });
+    </script>
 
 </body>
 </html>

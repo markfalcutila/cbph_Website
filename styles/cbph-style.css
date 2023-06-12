@@ -444,6 +444,12 @@ html {
   background-size: cover;
   background-position: center;
 }
+.contact__footer .text-details {
+  font-size: 16px;
+}
+.contact__footer .text-footer-title {
+  font-size: 18px;
+}
 
 .footer-logo {
   width: 200px;
@@ -798,7 +804,7 @@ html {
 .section-three-numbers:before {
   content: "";
   position: absolute;
-  height: 40%;
+  height: 50%;
   background: red;
   width: 8px;
   top: 10px;
@@ -989,7 +995,8 @@ Extra extra large	xxl	≥1400px */
   margin-top: 50px;
 }
 .main__page .section__four .text-icon-title {
-  height: 60px;
+  height: auto;
+  min-height: 60px;
   /* border: 1px solid red!important; */
   display: flex;
   align-items: start;
@@ -1002,13 +1009,6 @@ Extra extra large	xxl	≥1400px */
 .main__page .section__four .char-icon1 {
   height: 90px;
   width: 90px;
-}
-.main__page .section__four .text-icon-title {
-  height: 60px;
-  /* border: 1px solid red!important; */
-  display: flex;
-  align-items: start;
-  font-size: 20px;
 }
 .main__page .section__four .text-icon-details {
   height: 80px;
@@ -1095,6 +1095,9 @@ Extra extra large	xxl	≥1400px */
   font-size: 50px;
 }
 .main__page .text-title {
+  font-size: 50px;
+}
+.main__page .text-title-characteristic {
   font-size: 50px;
 }
 .main__page .text-info-title {
@@ -1291,6 +1294,9 @@ Extra extra large	xxl	≥1400px */
 .clinicalStudies__page .text-details {
   font-size: 16px;
 }
+.clinicalStudies__page .text-detail-tile {
+  font-size: 18px;
+}
 .clinicalStudies__page .text-semi-title {
   font-size: 25px;
   font-weight: bold;
@@ -1300,6 +1306,27 @@ Extra extra large	xxl	≥1400px */
 }
 .clinicalStudies__page .cs__for__all {
   display: block;
+}
+.clinicalStudies__page .img__container1 {
+  margin: 10px 0;
+}
+.clinicalStudies__page .img__container2 {
+  margin: 10px 0;
+}
+.clinicalStudies__page .img__container3 {
+  margin: 10px 0;
+}
+.clinicalStudies__page .img__container4 {
+  margin: 10px 0;
+}
+.clinicalStudies__page .img__container5 {
+  margin: 10px 0;
+}
+.clinicalStudies__page .img__container6 {
+  margin: 10px 0;
+}
+.clinicalStudies__page .img__container7 {
+  margin: 10px 0;
 }
 
 .faqs__page .faqs {
@@ -1504,7 +1531,533 @@ Extra extra large	xxl	≥1400px */
   color: #f4f4f4;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 374px) {
+  .main__page .section__one {
+    padding: 60px 10% 0 10%;
+    width: 100%;
+    margin: 0;
+  }
+  .main__page .section__one .button-one {
+    padding: 8px 15px;
+    width: auto;
+    font-size: 13px;
+    width: 150px;
+  }
+  .main__page .section__one .button-two {
+    padding: 8px 15px;
+    width: auto;
+    font-size: 13px;
+    width: 150px;
+  }
+  .main__page .section__one .homepg-progi-dot {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    height: 50%;
+    z-index: 10;
+    opacity: 0.3;
+  }
+  .main__page .section__one .section__one__left {
+    order: 1;
+  }
+  .main__page .section__one .section__one__right {
+    order: 2;
+  }
+  .main__page .section__one .section__one__right img {
+    display: none;
+  }
+  .main__page .section__two {
+    padding: 0 10%;
+    width: 100%;
+    margin: 0;
+  }
+  .main__page .section__two .img-prod-combine {
+    height: auto;
+    min-width: 200px;
+    max-width: 300px;
+  }
+  .main__page .section__two .img-prod-combine-bg {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .main__page .section__three {
+    padding: 50px 3%;
+    height: 500px;
+  }
+  .main__page .section__three .progi-logo-white {
+    width: 150px;
+  }
+  .main__page .section__three .img-stick-front {
+    display: none;
+  }
+  .main__page .section__three .img-stick-back {
+    display: none;
+  }
+  .main__page .section__four {
+    padding: 100px 10%;
+    width: 100%;
+    margin: 50px 0;
+  }
+  .main__page .section__four .section__four__left {
+    margin-top: 50px;
+  }
+  .main__page .section__four .section__fou__right {
+    margin-top: 50px;
+  }
+  .main__page .section__four .text-icon-title {
+    height: auto;
+    min-height: 60px;
+    display: flex;
+    align-items: start;
+    font-size: 18px;
+  }
+  .main__page .section__four .char-icon {
+    height: 70px;
+    width: 70px;
+  }
+  .main__page .section__four .char-icon1 {
+    height: 60px;
+    width: 60px;
+  }
+  .main__page .section__four .text-icon-details {
+    height: 80px;
+    display: flex;
+    align-items: start;
+    font-size: 12px;
+  }
+  .main__page .section__five {
+    padding: 50px 10%;
+    margin: 0;
+  }
+  .main__page .section__five .progi-logo-white-two {
+    width: 100%;
+  }
+  .main__page .section__six {
+    padding: 50px 10%;
+    width: 100%;
+    margin: 0;
+  }
+  .main__page .section__six .section-for-video {
+    width: 100%;
+    bottom: 0;
+  }
+  .main__page .section__six .section-for-video .video-container {
+    width: 100%;
+    position: relative;
+  }
+  .main__page .section__seven {
+    padding: 50px 10%;
+    width: 100%;
+    margin: 0;
+  }
+  .main__page .section__seven .section__seven__left {
+    order: 2;
+  }
+  .main__page .section__seven .section__seven__left img {
+    border-top-right-radius: 0;
+  }
+  .main__page .section__seven .section__seven__right {
+    order: 1;
+  }
+  .main__page .section__eight {
+    height: 500px;
+    padding: 0 10%;
+    width: 100%;
+    margin: 0;
+  }
+  .main__page .section__eight .text-testimonial-title {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .main__page .section__eight .text-testimonial-details {
+    font-size: 10px;
+  }
+  .main__page .section__eight .text-testimonial-context {
+    font-size: 13px;
+    line-height: 1;
+    margin-top: 10px;
+  }
+  .main__page .section__eight .quoate {
+    color: #191F6C;
+    font-size: 35px;
+    position: absolute;
+    top: 20px;
+  }
+  .main__page .section__eight .fa-star {
+    font-size: 13px;
+  }
+  .main__page .text-page-header {
+    font-size: 20px;
+  }
+  .main__page .text-content-title {
+    font-size: 20px;
+  }
+  .main__page .text-title {
+    font-size: 20px;
+  }
+  .main__page .text-title-characteristic {
+    font-size: 20px;
+  }
+  .main__page .text-info-title {
+    font-size: 60px;
+  }
+  .main__page .text-infos {
+    font-size: 14px;
+  }
+  .main__page .text-infos-details {
+    font-size: 12px;
+  }
+  .main__page .text-details {
+    font-size: 14px;
+  }
+  .about__page .progi__content1 {
+    padding: 0 10%;
+    width: 100%;
+  }
+  .about__page .progi__content1 img {
+    height: auto;
+    min-width: 200px;
+    max-width: 300px;
+  }
+  .about__page .progi__content2 {
+    padding: 0 10%;
+    width: 100%;
+    margin: 100px 0;
+  }
+  .about__page .progi__content2 .progi__content2__left {
+    order: 1;
+  }
+  .about__page .progi__content2 .progi__content2__right {
+    order: 2;
+  }
+  .about__page .progi__content__mission {
+    width: 100%;
+    background-color: #191F6C;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://drive.google.com/uc?id=1EB5fwEBp8BZcMJAoR5hm3q2z5FDPRUQ8");
+    background-size: cover;
+    background-position: left center center;
+    background-repeat: no-repeat;
+    padding: 150px 3%;
+    margin: 100px 0;
+    opacity: 0.9;
+    display: flex;
+    justify-content: end;
+    display: none;
+  }
+  .about__page .progi__content__mission label {
+    color: white;
+    text-shadow: 0 2px 4px rgba(194, 176, 176, 0.3);
+  }
+  .about__page .progi__content__mission__mobile {
+    padding: 0 10%;
+    width: 100%;
+    margin: 100px 0;
+    display: block;
+  }
+  .about__page .progi__content__mission__mobile .progi__content__mission__mobile__left {
+    order: 2;
+  }
+  .about__page .progi__content__mission__mobile .progi__content__mission__mobile__right {
+    order: 1;
+    margin-top: 20px;
+  }
+  .about__page .progi__content3 {
+    display: none;
+  }
+  .about__page .progi__content3__mobile {
+    padding: 0 10%;
+    width: 100%;
+    margin: 100px 0;
+    display: block;
+  }
+  .about__page .progi__content3__mobile .progi__content3__mobile__left {
+    order: 2;
+  }
+  .about__page .progi__content3__mobile .progi__content3__mobile__right {
+    order: 1;
+  }
+  .about__page .progi-dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    right: 100px;
+    z-index: 10;
+    opacity: 0.3;
+  }
+  .about__page .aboutUs__image {
+    height: auto;
+    max-width: 250px;
+  }
+  .about__page .text-page-header {
+    font-size: 20px;
+  }
+  .about__page .text-content-title {
+    font-size: 20px;
+  }
+  .about__page .text-title {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  .about__page .text-details {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .about__page .text-semi-title {
+    font-size: 14px;
+  }
+  .about__page .img__curves1 {
+    border-top-left-radius: 0;
+  }
+  .about__page .img__curves2 {
+    border-top-right-radius: 0;
+  }
+  .about__page .img__curves3 {
+    border-top-left-radius: 0;
+  }
+  .about__page .img__curves4 {
+    border-top-right-radius: 0;
+  }
+  .about__page .img__curves5 {
+    border-top-left-radius: 0;
+  }
+  .registration__page .registration__header {
+    height: 200px;
+    width: 100%;
+    padding: 0 10%;
+  }
+  .registration__page .reg__container {
+    padding: 0 10%;
+    width: 100%;
+    margin: 100px 0;
+  }
+  .registration__page .registration__image {
+    height: auto;
+    max-width: 250px;
+  }
+  .registration__page .text-page-header {
+    font-size: 40px;
+  }
+  .registration__page .text-content-title {
+    font-size: 30px;
+  }
+  .registration__page .text-title {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .registration__page .text-details {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .registration__page .text-semi-title {
+    font-size: 18px;
+  }
+  .clinicalStudies__page .dot-icon {
+    height: 30px;
+  }
+  .clinicalStudies__page .clinical_studies {
+    height: 300px;
+    padding: 0 5%;
+    margin: 0;
+  }
+  .clinicalStudies__page .cs__container {
+    padding: 50px 5% 0 5%;
+  }
+  .clinicalStudies__page .cs-content-container {
+    margin: 50px 0px;
+  }
+  .clinicalStudies__page .text-details-red {
+    color: #C83C42;
+    font-weight: bold;
+  }
+  .clinicalStudies__page .cstudies-img {
+    margin-top: 50px;
+  }
+  .clinicalStudies__page .text-page-header {
+    font-size: 30px;
+  }
+  .clinicalStudies__page .text-content-title {
+    font-size: 25px;
+  }
+  .clinicalStudies__page .text-title {
+    font-size: 16px;
+  }
+  .clinicalStudies__page .text-details {
+    font-size: 14px;
+  }
+  .clinicalStudies__page .text-detail-tile {
+    font-size: 16px;
+  }
+  .clinicalStudies__page .text-semi-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .clinicalStudies__page .cs__for__all {
+    display: none;
+  }
+  .clinicalStudies__page .cs__for_sm {
+    display: block;
+  }
+  .faqs__page .faqs {
+    height: 200px;
+  }
+  .faqs__page .faqs__container {
+    padding: 50px 5% 0 5%;
+  }
+  .faqs__page .accordion-section .panel-default > .panel-heading {
+    border: 0;
+    padding: 0;
+    border-bottom: 1px solid #f6eded;
+  }
+  .faqs__page .accordion-section .panel-default .panel-title a {
+    display: block;
+    color: #525f69;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .faqs__page .accordion-section .panel-default .panel-title {
+    padding: 10px 20px;
+    position: relative;
+  }
+  .faqs__page .accordion-section .panel-default .panel-title a:after {
+    font-family: "FontAwesome";
+    font-size: 18px;
+  }
+  .faqs__page .accordion-section .panel-default .panel-body {
+    font-size: 15px;
+  }
+  .faqs__page .faq-four-dots {
+    width: 45px;
+    left: 0;
+    margin-left: 10px;
+  }
+  .faqs__page .text-page-header {
+    font-size: 30px;
+  }
+  .faqs__page .text-content-title {
+    font-size: 25px;
+  }
+  .faqs__page .text-title {
+    font-size: 25px;
+  }
+  .faqs__page .text-details {
+    font-size: 14px;
+  }
+  .contactUs__page .contact__us {
+    height: 200px;
+  }
+  .contactUs__page .contact__container {
+    padding: 50px 0px;
+    margin: 30px 0;
+  }
+  .contactUs__page .contact__map {
+    height: 300px;
+    max-height: 500px;
+    width: 100%;
+    padding: 0;
+  }
+  .contactUs__page .contact__form {
+    order: 1;
+    padding: 0 30px;
+    margin-bottom: 50px;
+  }
+  .contactUs__page .contact__form .form-title {
+    margin-bottom: 20px;
+  }
+  .contactUs__page .contact__form .contact__form__container {
+    margin-top: 20px;
+  }
+  .contactUs__page .contact__form input[type=text] {
+    border: none;
+    border-bottom: 1px solid #555;
+    outline: none;
+    font-size: 15px;
+    margin: 15px 0;
+    width: 100%;
+    padding: 5px 0px;
+  }
+  .contactUs__page .contact__form textarea {
+    border: none;
+    border-bottom: 1px solid #555;
+    outline: none;
+    font-size: 15px;
+    margin: 15px 0;
+    width: 100%;
+    padding: 5px 0px;
+    resize: none;
+  }
+  .contactUs__page .contact__form .section-eight input:focus {
+    border: none;
+    /* border-bottom: 2px solid #CA1A23; */
+    border-bottom: 1px solid #191F6C;
+  }
+  .contactUs__page .contact__form textarea:focus {
+    border: none;
+    border-bottom: 1px solid #191F6C;
+  }
+  .contactUs__page .contact__right {
+    width: 100%;
+    padding: 30px 50px;
+    order: 2;
+  }
+  .contactUs__page .contact__right .address__lg {
+    display: none;
+  }
+  .contactUs__page .contact__right .address__all {
+    display: block;
+  }
+  .contactUs__page .text-page-header {
+    font-size: 30px;
+  }
+  .contactUs__page .text-content-title {
+    font-size: 25px;
+  }
+  .contactUs__page .text-title {
+    font-size: 25px;
+  }
+  .contactUs__page .text-details {
+    font-size: 14px;
+  }
+  .contactUs__page .button-one {
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 15px;
+    background: #191F6C;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  .contactUs__page .button-one:hover {
+    background: rgb(35, 56, 139);
+    color: white;
+    border: none;
+    outline: none;
+  }
+  .contactUs__page .button-one:active {
+    border: none;
+    outline: none;
+  }
+  .contactUs__page .text-mini-title {
+    font-size: 18px;
+    color: #f4f4f4;
+  }
+  .contactUs__page .text-icon {
+    font-size: 20px;
+    color: #f4f4f4;
+    margin-right: 30px;
+  }
+  .contactUs__page .text-mini-desc {
+    font-size: 13px;
+    color: #f4f4f4;
+  }
+}
+@media (min-width: 375px) {
   .main__page .section__one {
     padding: 100px 10% 0 10%;
     width: 100%;
@@ -1559,7 +2112,7 @@ Extra extra large	xxl	≥1400px */
     right: 0;
   }
   .main__page .section__three {
-    padding: 50px 10%;
+    padding: 50px 3%;
     height: 500px;
   }
   .main__page .section__three .progi-logo-white {
@@ -1584,7 +2137,8 @@ Extra extra large	xxl	≥1400px */
     margin-top: 50px;
   }
   .main__page .section__four .text-icon-title {
-    height: 60px;
+    height: auto;
+    min-height: 60px;
     /* border: 1px solid red!important; */
     display: flex;
     align-items: start;
@@ -1597,12 +2151,6 @@ Extra extra large	xxl	≥1400px */
   .main__page .section__four .char-icon1 {
     height: 60px;
     width: 60px;
-  }
-  .main__page .section__four .text-icon-title {
-    height: 60px;
-    display: flex;
-    align-items: start;
-    font-size: 20px;
   }
   .main__page .section__four .text-icon-details {
     height: 80px;
@@ -1678,6 +2226,9 @@ Extra extra large	xxl	≥1400px */
     font-size: 25px;
   }
   .main__page .text-title {
+    font-size: 25px;
+  }
+  .main__page .text-title-characteristic {
     font-size: 25px;
   }
   .main__page .text-info-title {
@@ -1862,6 +2413,9 @@ Extra extra large	xxl	≥1400px */
   }
   .clinicalStudies__page .text-details {
     font-size: 14px;
+  }
+  .clinicalStudies__page .text-detail-tile {
+    font-size: 16px;
   }
   .clinicalStudies__page .text-semi-title {
     font-size: 16px;
@@ -2106,7 +2660,8 @@ Extra extra large	xxl	≥1400px */
     margin-top: 50px;
   }
   .main__page .section__four .text-icon-title {
-    height: 60px;
+    height: auto;
+    min-height: 60px;
     /* border: 1px solid red!important; */
     display: flex;
     align-items: start;
@@ -2119,12 +2674,6 @@ Extra extra large	xxl	≥1400px */
   .main__page .section__four .char-icon1 {
     height: 80px;
     width: 80px;
-  }
-  .main__page .section__four .text-icon-title {
-    height: 60px;
-    display: flex;
-    align-items: start;
-    font-size: 20px;
   }
   .main__page .section__four .text-icon-details {
     height: 80px;
@@ -2200,6 +2749,9 @@ Extra extra large	xxl	≥1400px */
     font-size: 30px;
   }
   .main__page .text-title {
+    font-size: 30px;
+  }
+  .main__page .text-title-characteristic {
     font-size: 30px;
   }
   .main__page .text-info-title {
@@ -2386,6 +2938,9 @@ Extra extra large	xxl	≥1400px */
   }
   .clinicalStudies__page .text-details {
     font-size: 18px;
+  }
+  .clinicalStudies__page .text-detail-tile {
+    font-size: 20px;
   }
   .clinicalStudies__page .text-semi-title {
     font-size: 18px;
@@ -2616,7 +3171,8 @@ Extra extra large	xxl	≥1400px */
     margin-top: 50px;
   }
   .main__page .section__four .text-icon-title {
-    height: 60px;
+    height: auto;
+    min-height: 60px;
     /* border: 1px solid red!important; */
     display: flex;
     align-items: start;
@@ -2630,12 +3186,6 @@ Extra extra large	xxl	≥1400px */
     height: 80px;
     width: 80px;
     margin-bottom: 10px;
-  }
-  .main__page .section__four .text-icon-title {
-    height: 60px;
-    display: flex;
-    align-items: start;
-    font-size: 20px;
   }
   .main__page .section__four .text-icon-details {
     min-height: 80px;
@@ -2716,6 +3266,9 @@ Extra extra large	xxl	≥1400px */
     font-size: 30px;
   }
   .main__page .text-title {
+    font-size: 30px;
+  }
+  .main__page .text-title-characteristic {
     font-size: 30px;
   }
   .main__page .text-info-title {
@@ -2918,6 +3471,9 @@ Extra extra large	xxl	≥1400px */
   }
   .clinicalStudies__page .text-details {
     font-size: 16px;
+  }
+  .clinicalStudies__page .text-detail-tile {
+    font-size: 18px;
   }
   .clinicalStudies__page .text-semi-title {
     font-size: 25px;
@@ -3209,7 +3765,8 @@ Extra extra large	xxl	≥1400px */
     margin-top: 50px;
   }
   .main__page .section__four .text-icon-title {
-    height: 60px;
+    height: auto;
+    min-height: 60px;
     /* border: 1px solid red!important; */
     display: flex;
     align-items: start;
@@ -3222,21 +3779,6 @@ Extra extra large	xxl	≥1400px */
   .main__page .section__four .char-icon1 {
     height: 90px;
     width: 90px;
-  }
-  .main__page .section__four .text-icon-title {
-    height: 60px;
-    /* border: 1px solid red!important; */
-    display: flex;
-    align-items: start;
-    font-size: 20px;
-  }
-  .main__page .section__four .text-icon-details {
-    height: 80px;
-    display: flex;
-    align-items: start;
-    /* border: 1px solid red!important; */
-    font-size: 14px;
-    height: auto;
   }
   .main__page .section__five {
     width: 100%;
@@ -3315,6 +3857,9 @@ Extra extra large	xxl	≥1400px */
     font-size: 50px;
   }
   .main__page .text-title {
+    font-size: 50px;
+  }
+  .main__page .text-title-characteristic {
     font-size: 50px;
   }
   .main__page .text-info-title {
@@ -3507,6 +4052,9 @@ Extra extra large	xxl	≥1400px */
   }
   .clinicalStudies__page .text-details {
     font-size: 16px;
+  }
+  .clinicalStudies__page .text-detail-tile {
+    font-size: 18px;
   }
   .clinicalStudies__page .text-semi-title {
     font-size: 25px;
