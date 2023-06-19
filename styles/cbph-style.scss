@@ -1485,7 +1485,7 @@ html{
     height: 500px;
     width: 100%;
     background-color: #191F6C;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/clinical-studies-bg\ 1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/bg/clinical-studies.jpeg);
     background-size: cover;
     background-position: center center;
     margin-bottom: 50px;
@@ -1585,7 +1585,7 @@ html{
     height: 500px;
     width: 100%;
     background-color: #191F6C;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(../images/bg/faqs-bg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/bg/faq-white.png);
     background-size: cover;
     background-position: center center;
     margin-bottom: 50px;
@@ -1606,11 +1606,16 @@ html{
     text-decoration: none;
     font-size: 20px;
     
+    .d-flex {
+    // border: 1px solid red;
+
+    }
 
   }
   .accordion-section .panel-default .panel-title  {
     padding: 10px 20px;
     position: relative;
+    
 
   }
   .accordion-section .panel-default .panel-title a:after {
@@ -1629,9 +1634,18 @@ html{
   }
   .accordion-section .panel-default .panel-body {
     font-size: 16px;
-    padding: 20px 70px  10px 70px;
+    // padding: 10px 20px;
+    padding: 10px 20px;
     border-bottom: 1px solid #f6eded;
 
+    label{
+      margin-left: 54px;
+      // border: 1px solid red;
+    }
+
+  }
+  .number__title{
+    width: 50px ;
   }
   .faq-four-dots{
     width: 45px;
@@ -1664,7 +1678,7 @@ html{
     height: 500px;
     width: 100%;
     background-color: #191F6C;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/bg/contact-us-bg2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/bg/contact-us.jpeg);
     background-size: cover;
     background-position: center center;
     margin-bottom: 50px;
@@ -4551,7 +4565,7 @@ html{
         height: 500px;
         width: 100%;
         background-color: #191F6C;
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/clinical-studies-bg\ 1.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/bg/clinical-studies.jpeg);
         background-size: cover;
         background-position: center center;
         margin-bottom: 50px;
@@ -4622,7 +4636,7 @@ html{
         height: 500px;
         width: 100%;
         background-color: #191F6C;
-        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(../images/bg/faqs-bg.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/bg/faq-white.png);
         background-size: cover;
         background-position: center center;
         margin-bottom: 50px;
@@ -4671,7 +4685,7 @@ html{
       }
       .accordion-section .panel-default .panel-body {
         font-size: 16px;
-        padding: 20px 70px  10px 70px;
+        padding: 10px 20px;
         border-bottom: 1px solid #f6eded;
   
       }
@@ -4706,7 +4720,7 @@ html{
         height: 500px;
         width: 100%;
         background-color: #191F6C;
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/bg/contact-us-bg2.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/bg/contact-us.jpeg);
         background-size: cover;
         background-position: center center;
         margin-bottom: 50px;
@@ -5339,7 +5353,7 @@ html{
     height: 500px;
     width: 100%;
     background-color: #191F6C;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/clinical-studies-bg\ 1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/bg/clinical-studies.jpeg);
     background-size: cover;
     background-position: center center;
     margin-bottom: 50px;
@@ -5411,7 +5425,7 @@ html{
     height: 500px;
     width: 100%;
     background-color: #191F6C;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(../images/bg/faqs-bg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/bg/faq-white.png);
     background-size: cover;
     background-position: center center;
     margin-bottom: 50px;
@@ -5455,7 +5469,7 @@ html{
   }
   .accordion-section .panel-default .panel-body {
     font-size: 16px;
-    padding: 20px 70px  10px 70px;
+    padding: 10px 20px;
     border-bottom: 1px solid #f6eded;
 
   }
@@ -5490,9 +5504,9 @@ html{
     height: 500px;
     width: 100%;
     background-color: #191F6C;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/bg/contact-us-bg2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/bg/contact-us.jpeg);
     background-size: cover;
-    background-position: center center;
+    background-position: center bottom;
     margin-bottom: 50px;
     padding: 0 10%;
     margin: 0 100px 0 0;
