@@ -849,8 +849,7 @@ html {
   width: 100%;
   height: 100%;
 }
-
-.swiper-slide {
+.swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -860,34 +859,30 @@ html {
   width: 100%;
   padding: 0 20px;
 }
-
-.swiper-slide img {
+.swiper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.box1 {
+.swiper .box1 {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  min-height: 330px;
   height: auto;
   width: auto;
   padding: 30px 30px;
   border-radius: 30px;
 }
-
-.testimonial-picture {
+.swiper .testimonial-picture {
   height: 50px !important;
   width: 50px !important;
   border-radius: 50%;
 }
-
-.fa-star {
+.swiper .fa-star {
   color: #191F6C;
 }
-
-.quoate {
+.swiper .quoate {
   color: #191F6C;
   font-size: 70px;
   position: absolute;
@@ -2062,6 +2057,11 @@ Extra extra large	xxl	≥1400px */
     font-size: 13px;
     color: #f4f4f4;
   }
+  .swiper .box1 {
+    min-height: auto;
+    height: auto;
+    width: auto;
+  }
 }
 @media (min-width: 375px) {
   .main__page .section__one {
@@ -2587,6 +2587,11 @@ Extra extra large	xxl	≥1400px */
     font-size: 13px;
     color: #f4f4f4;
   }
+  .swiper .box1 {
+    min-height: auto;
+    height: auto;
+    width: auto;
+  }
 }
 @media (min-width: 768px) {
   /* Styles for tablets */
@@ -3097,6 +3102,11 @@ Extra extra large	xxl	≥1400px */
   .contactUs__page .text-mini-desc {
     font-size: 15px;
     color: #f4f4f4;
+  }
+  .swiper .box1 {
+    min-height: auto;
+    height: auto;
+    width: auto;
   }
 }
 @media (min-width: 992px) {
@@ -3675,6 +3685,18 @@ Extra extra large	xxl	≥1400px */
   .contactUs__page .text-mini-desc {
     font-size: 15px;
     color: #f4f4f4;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper .box1 {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-height: 330px;
+    height: auto;
+    width: auto;
+    padding: 30px 30px;
+    border-radius: 30px;
   }
 }
 @media (min-width: 1200px) {
@@ -4271,5 +4293,14 @@ Extra extra large	xxl	≥1400px */
   .contactUs__page .text-mini-desc {
     font-size: 15px;
     color: #f4f4f4;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper .box1 {
+    min-height: 330px;
+    height: auto;
+    width: auto;
   }
 }/*# sourceMappingURL=cbph-style.css.map */

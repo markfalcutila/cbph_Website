@@ -942,8 +942,8 @@ html{
 .swiper {
   width: 100%;
   height: 100%;
-}
 
+  
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -964,11 +964,14 @@ html{
 
 .box1{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  min-height: 330px;
   height: auto;
   width: auto;
   padding: 30px 30px;
   border-radius: 30px;
 }
+
+
 .testimonial-picture{
   height: 50px!important;
   width: 50px!important;
@@ -983,6 +986,8 @@ html{
   position: absolute;
   top: 20px;
 }
+}
+
 
 /* ------------------------------------------ */
 /* FOR RESPONSIVE BREAKPOINT  */
@@ -2553,6 +2558,16 @@ html{
     
     }
 
+    .swiper {
+
+      .box1{
+        min-height: auto;
+        height: auto;
+        width: auto;
+       
+      }
+    }
+
 
 
 }
@@ -3307,6 +3322,16 @@ html{
     
     }
 
+    .swiper {
+
+      .box1{
+        min-height: auto;
+        height: auto;
+        width: auto;
+       
+      }
+    }
+
 
 
 }
@@ -4048,6 +4073,16 @@ html{
       
     }
   
+  }
+
+  .swiper {
+
+    .box1{
+      min-height: auto;
+      height: auto;
+      width: auto;
+     
+    }
   }
 }
 
@@ -4860,6 +4895,20 @@ html{
       }
     
     }
+
+      .swiper {
+      width: 100%;
+      height: 100%;
+
+      .box1{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        min-height: 330px;
+        height: auto;
+        width: auto;
+        padding: 30px 30px;
+        border-radius: 30px;
+      }
+    }
 }
 
 @media (min-width: 1200px) {
@@ -5662,6 +5711,17 @@ html{
   }
 
 }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+
+    .box1{
+      min-height: 330px;
+      height: auto;
+      width: auto;
+    }
+  }
 }
 
 
