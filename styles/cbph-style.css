@@ -1347,6 +1347,9 @@ Extra extra large	xxl	≥1400px */
   text-decoration: none;
   font-size: 20px;
 }
+.faqs__page .accordion-section .panel-default .panel-title a .faq-title {
+  width: calc(100% - 50px) !important;
+}
 .faqs__page .accordion-section .panel-default .panel-title {
   padding: 10px 20px;
   position: relative;

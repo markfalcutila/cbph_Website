@@ -1615,6 +1615,9 @@ html{
     // border: 1px solid red;
 
     }
+    .faq-title{
+      width: calc(100% - 50px)!important;
+    }
 
   }
   .accordion-section .panel-default .panel-title  {
@@ -1652,6 +1655,7 @@ html{
   .number__title{
     width: 50px ;
   }
+  
   .faq-four-dots{
     width: 45px;
     left: 0;
