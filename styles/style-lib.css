@@ -3433,4 +3433,9 @@ font-size: 1px!important;
     .lh-2{
         line-height: 2!important;
     }
+
+
+    .text-decor-none{
+      text-decoration: none!important;
+    }
     

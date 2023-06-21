@@ -503,6 +503,7 @@ html {
 }
 
 .socmed-icon {
+  text-decoration: none;
   color: #fff;
   border: 1px solid white;
   padding: 10px;
@@ -516,6 +517,7 @@ html {
 }
 .socmed-icon i {
   font-size: 20px;
+  color: white;
 }
 
 .card-logo-container {
@@ -684,16 +686,16 @@ html {
   width: auto;
   font-size: 15px;
   background: white;
-  color: #3a477c;
+  color: #191F6C;
   width: 200px;
   border-radius: 25px;
   cursor: pointer;
   outline: none;
-  border: 1px solid #3a477c;
+  border: 1px solid #191F6C;
 }
 
 .button-two:hover {
-  background: #3a477c;
+  background: #191F6C;
   color: #ffffff;
   outline: none;
   /* border: none; */
