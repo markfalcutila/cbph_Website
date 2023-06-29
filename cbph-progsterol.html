@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ProGsterol</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles/cbph-style.css">
     <link rel="stylesheet" href="styles/style-lib.css">
 
+    <script src="scripts/main.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+    <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
@@ -22,7 +27,8 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+
+
 
 </head>
 <body>
@@ -30,7 +36,7 @@
     <div class="main-container about__page">
         
         <!-- NAVBAR -->
-        <div class="navbar w100 ">
+        <div class="navbar w100 " id="navbar">
             <div class="icon ">
                 <img src="images/progi-logo.svg" alt="" class="icon-img">
             </div>
@@ -172,7 +178,7 @@
             <div class="row  d-flex justify-content-between d-flex pt-10 pb-10">
             
                 <div class="progi__content3__mobile__right d-flex flex-column col-xl-6 col-lg-6 col-md-12 col-sm-12 justify-content-center font-tahoma p-rel">
-                    <label class="text-content-title text-bold lh-1-2 ">All naturally source</label>
+                    <label class="text-content-title text-bold lh-1-2 ">All naturally sourced</label>
                     <!-- <label class="text-content-title text-bold lh-1-5 ">Enhanced and safe wellness</label> -->
                     <!-- <label class="text-details  mt-20 lh-1-5 "  data-aos="fade-up">
                         Diabetic supplements derived from natural sources often have a lower risk of adverse side effects compared to oral antidiabetic drugs. Natural supplements, when taken as directed, are generally well-tolerated and have fewer associated side effects. 
@@ -204,16 +210,16 @@
         </div>
 
 
-        <div class="progi__content2">
+        <div class="progi__content4">
 
             <div class="row  d-flex justify-content-between d-flex pt-10 pb-10">
             
-                <div class="progi__content2__left d-flex col-xl-6  col-lg-6 col-md-12 col-sm-12  align-center justify-content-center  p-rel">
+                <div class="progi__content4__left d-flex col-xl-6  col-lg-6 col-md-12 col-sm-12  align-center justify-content-center  p-rel">
                     <img src="images/close-up-portrait-young-woman-s-hands-holding-test-tube-with-yellow-liquid.jpg" class=" p-rel img-fluid all__img__aboutus img__curves4" alt="">
                 </div>
 
-                <div class="progi__content2__right d-flex flex-column col-xl-6 col-lg-6 col-md-12 col-sm-12 justify-content-center font-tahoma p-rel" >
-                    <label class="text-content-title text-bold lh-1-2 ">Scientifically Backed</label>
+                <div class="progi__content4__right d-flex flex-column col-xl-6 col-lg-6 col-md-12 col-sm-12 justify-content-center font-tahoma p-rel" >
+                    <label class="text-content-title text-bold lh-1-2 ">Scientifically backed</label>
                     <div data-aos="fade-up">
                         <!-- <label class="text-details  mt-20 lh-1-5 " data-aos="fade-up">
                             This dietary supplement has been thoughtfully created based on thorough scientific research. To make sure that our product contains the most important and effective ingredients, we keep up with the most recent developments in diabetes and health. 
@@ -331,8 +337,20 @@
 
             </div>
         </div>
+
+        <button onclick="topFunction()" id="toTopBtn"></button>
+
     </div>
 
+
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <!-- TO TOP BUTTON -->
+    <script src="scripts/to-Top-script.js.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -342,6 +360,10 @@
         easing: "ease-in-out",
     });
     </script>
+
+
+
+
 
 
 

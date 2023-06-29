@@ -266,7 +266,7 @@ html{
       height: 600px;
       width: 100%;
       background-color: #191F6C;
-      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/imagesss/tester-bg.jpeg);
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/tester-bg.jpeg);
       background-size: cover;
       background-position: center;
       /* background-attachment: scroll; */
@@ -376,7 +376,7 @@ html{
       padding: 50px 10%;
       width: 100%;
       background-color: #14344E ;
-      /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/imagesss/tester-bg.jpeg); */
+      /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/tester-bg.jpeg); */
       background-size: cover;
       background-position: center;
     }
